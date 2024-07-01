@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faran-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(27, 27, 81);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: rgb(134, 134, 242);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(134, 134, 242);
+            height: 1px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .btn {
+            padding: 12px 20px;
+            background-color: rgb(82, 82, 195);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: background-color 0.3s;
+        }
+
+        .leftSection .btn:hover {
+            background-color: rgb(134, 134, 242);
+        }
+
+        .rightSection img {
+            width: 105%;
+        }
+
+        .leftSection h3,h4 {
+            color: rgb(170, 112, 225);
+        }
+
+        #element {
+            color: rgb(170, 112, 225);
+        }
+
+        .secondSection h1 {
+            font-size: 1.8rem;
+        }
+
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* General Card Styling */
+.card {
+    background-color: rgb(27, 27, 81); /* Dark background for cards */
+    border: 2px solid rgba(170, 112, 225, 0.5); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Clip the overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    text-align: center; /* Center-align text */
+padding: 40px 20px;
+            max-width: 80vw;
+            margin: auto;
+            color: white;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+/* Card Image Styling */
+.card .image-top {
+    width: 50px; /* Image size */
+    height: 50px; /* Maintain aspect ratio */
+    margin: 40px; /* Center the image and add some margin */
+    margin-bottom: 0px;
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid rgb(170, 112, 225); /* Border around image */
+}
+
+/* Card Title Styling */
+.card .card-title {
+    font-size: 1.4rem; /* Adjust font size */
+    font-weight: bold; /* Make the title bold */
+    color: rgb(170, 112, 225); /* Custom color for titles */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Card Text Styling */
+.card .card-text {
+    color: gray; /* Custom color for text */
+    font-size: 1rem; /* Adjust text size */
+    margin-bottom: 20px; /* Space below the text */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Space between cards on smaller screens */
+    }
+}
+
+/* Section Header Styling */
+#experience h1 {
+    font-size: 2.5rem; /* Size for section title */
+    color: rgb(170, 112, 225); /* Custom color for section title */
+    margin-bottom: 40px; /* Space below the section title */
+}
+
+#experience .text-center.text-gray {
+    color: gray; /* Color for subtitle */
+    font-size: 1.1rem; /* Size for subtitle */
+    margin-bottom: 10px; /* Space below the subtitle */
+text-align: center;
+}
+
+
+
+        .educationSection {
+            padding: 40px 20px;
+            max-width: 80vw;
+            margin: auto;
+            color: white;
+            text-align: center;
+background-color: rgb(27, 27, 81); /* Dark background for cards */
+    border: 2px solid rgba(170, 112, 225, 0.5); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Clip the overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+
+        }
+
+        .educationSection h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .educationSection ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .educationSection ul li {
+            background: rgb(27, 27, 81);
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid rgba(170, 112, 225, 0.5); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Clip the overflowing content */
+
+    text-align: center; /* Center-align text */
+        }
+
+        .educationSection ul li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .educationSection ul li h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: rgb(170, 112, 225);
+        }
+
+        .educationSection ul li p {
+            color: gray;
+            font-size: 1.2rem;
+        }
+
+        .educationSection ul li span {
+            color: rgb(134, 134, 242);
+            font-weight: bold;
+        }
+
+
+        .skillsSection,
+        .projectsSection,
+        .contactSection,
+        .educationSection {
+            background-color: rgb(27, 27, 81);
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 80vw;
+            margin: 40px auto;
+        }
+
+        .skillsSection h1,
+        .projectsSection h1,
+        .contactSection h1,
+        .educationSection h1,
+	.experienceSection h1 {
+            font-size: 2.0rem;
+            margin-bottom: 20px;
+		color: white;
+            text-align: center;
+
+        }
+
+        .skillsSection ul,
+        .projectsSection ul {
+            list-style: none;
+            padding: 0;
+
+        }
+
+        .skillsSection ul li,
+        .projectsSection ul li {
+            margin: 10px 0;
+border: 2px solid rgba(170, 112, 225, 0.5); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Clip the overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    text-align: center; /* Center-align text */
+        }
+.skillsSection {
+
+    border: 2px solid rgba(170, 112, 225, 0.5); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px 20px;
+    background-color: rgb(27, 27, 81);
+    max-width: 80vw;
+    margin: 40px auto;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.skillsSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(170, 112, 225);
+}
+
+.skill h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: rgb(170, 112, 225);
+}
+
+
+        /* styles.css */
+
+/* Skill Section */
+#skills {
+    padding: 50px 0;
+    max-width: 82vw;
+    text-align: center;
+    background-color: rgb(27, 27, 81);
+
+}
+
+#skills .skill-box {
+
+    text-align: left;
+    padding: 40px 20px;
+    background-color: rgb(27, 27, 81);
+    max-width: 80vw;
+    margin: 40px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    border: 2px solid rgba(170, 112, 225, 0.5); /* Semi-transparent border */
+    overflow: hidden; /* Clip the overflowing content */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+
+}
+
+#skills h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#skills .progress {
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#skills .progress-bar {
+    height: 20px;
+    line-height: 20px;
+    background-color: #007bff; /* Bootstrap primary color or customize */
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    width: 0; /* Initial width, will be set by JavaScript */
+    transition: width 1s ease-in-out; /* Smooth transition for width */
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    #skills h2 {
+        font-size: 28px;
+    }
+
+    #skills .col-md-4 {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+        .projectsSection {
+            padding: 40px 20px;
+            max-width: 80vw;
+            margin: auto;
+            color: white;
+            text-align: center;
+border: 2px solid rgba(170, 112, 225, 0.5); /* Semi-transparent border */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Clip the overflowing content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+
+        }
+
+        .projectsSection h1,h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .projectsSection ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .projectsSection ul li {
+            background: rgb(27, 27, 81);
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: left;
+        }
+
+        .projectsSection ul li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .projectsSection ul li h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: rgb(170, 112, 225);
+        }
+
+        .projectsSection ul li p {
+            color: gray;
+            font-size: 1.2rem;
+        }
+
+        .projectsSection ul li span {
+            color: rgb(134, 134, 242);
+            font-weight: bold;
+        }
+
+
+        .contactSection form div {
+            margin-bottom: 15px;
+        }
+
+        .contactSection label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contactSection input,
+        .contactSection textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contactSection textarea {
+            resize: vertical;
+        }
+
+        .contactSection button {
+            padding: 12px 20px;
+            background-color: rgb(82, 82, 195);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contactSection button:hover {
+            background-color: rgb(134, 134, 242);
+        }
+
+        footer {
+            background-color: rgb(27, 27, 81);
+        }
+
+        .footerBox {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footerBox ul {
+            list-style: none;
+        }
+
+        .footerBox div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+.round-image {
+    width: 100%; /* Adjust as necessary to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures the image covers the entire container without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better visibility */
+    border: 2px solid #fff; /* Optional: Adds a border around the image */
+}
+
+
+
+    </style>
+    <style></style>
+</head>
+
+<body>
+    <header class="text-center my-5">
+        <nav>
+            <div class="left">
+
+                <h3>{{ headers.name }}'s Portfolio</h3>
+                </div>
+
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hello, My name is
+
+                <h3>{{ headers.name }}</h3>
+
+                <div>
+                    and I am a
+
+                <h4><span id="element"></span></h4>
+                <p>{{ headers.title_line }}</p>
+
+                </div>
+
+
+                <div class="buttons">
+                    <button class="btn" onclick="alert('Request for Download Pending!')">Download Resume</button>
+                    <button onclick="window.location.href='https://www.youtube.com/channel/UCAwkJcrb7rteGLgeFGlE3ng'" class="btn">Visit Youtube</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                {% if headers.profile_image %}
+                        <img src="{{ headers.profile_image.url }}" alt="{{ header.name }}" class="round-image">
+                {% else %}
+                        <img src="{% static 'portfolio/images/bgg.png' %}" alt="Default Image" class="img-fluid rounded-circle">
+                {% endif %}
+            </div>
+        </section>
+        <hr>
+        <section id="experience" class="experienceSection">
+        <div class="container">
+            <h1 class="text-center mb-4">Work Experience</h1>
+            <div class="row">
+                {% for experience in experiences %}
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ experience.title }} at {{ experience.company }}</h5>
+                            <p class="card-text">{{ experience.start_date|date:"F Y" }} - {% if experience.end_date %}{{ experience.end_date|date:"F Y" }}{% else %}Present{% endif %}</p>
+                            <p class="card-text">{{ experience.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="education" class="educationSection">
+        <div class="container">
+            <h2 class="text-center">Education</h2>
+            <ul class="list-group">
+                {% for education in education_list %}
+                <li class="list-group-item">
+                    <h3>{{ education.degree }}</h3>
+                    <p>{{ education.institution }} ({{ education.start_date|date:"Y" }} - {{ education.end_date|date:"Y" }})</p>
+                    <p>{{ education.description }}</p>
+                </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+ <section id="skills" class="skillsSection">
+    <h2>Skills</h2>
+    <div class="row">
+        {% for skill in skills %}
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <h3>{{ skill.name }}</h3>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" data-proficiency="{{ skill.proficiency }}" aria-valuenow="{{ skill.proficiency }}" aria-valuemin="0" aria-valuemax="100">
+                            {{ skill.proficiency }}%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+        <hr>
+        <section id="projects" class="projectsSection">
+        <div class="container">
+            <h2 class="">Projects</h2>
+            <div class="row">
+                {% for project in projects %}
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ project.title }}</h5>
+                            <p class="card-text">{{ project.description }}</p>
+                            {% if project.link %}
+                            <a href="{{ project.link }}" class="btn btn-primary">View Project</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+        <hr>
+        {% if form_submitted %}
+        <div class="container mt-3">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                Your message has been submitted successfully!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+        {% endif %}
+        <section id="contactSection" class="contactSection">
+        <h2>Contact Me</h2>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- Alert for form submission -->
+        {% if messages %}
+            <div class="alert alert-success mt-3" role="alert">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        {% endif %}
+    </section>
+    </main>
+    <footer>
+        <div class="footerBox">
+            <div>
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>Email: F2021266559@umt.edu.pk</li>
+                    <li>Phone: 0315-783-8065</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/faran-malik-4355aa197/">LinkedIn</a></li>
+                    <li><a href="https://github.com/faranmalik">GitHub</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCAwkJcrb7rteGLgeFGlE3ng">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <p>&copy; 2024 Muhammad Faran. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['{{ headers.designation }}'],
+            typeSpeed: 50,
+            loop: true,
+            loopCount: Infinity,
+            backSpeed: 30,
+            backDelay: 1000,
+        });
+document.addEventListener("DOMContentLoaded", function() {
+        // Select all elements with the class 'progress-bar'
+        var progressBars = document.querySelectorAll('.progress-bar');
+
+        // Iterate over each progress bar and set the width
+        progressBars.forEach(function(bar) {
+            var proficiency = bar.getAttribute('data-proficiency'); // Get the data-proficiency value
+            bar.style.width = proficiency + '%'; // Set the width based on the proficiency
+        });
+    });
+
+    </script>
+</body>
+
+</html>

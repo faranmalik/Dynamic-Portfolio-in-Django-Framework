@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1, header h2, header p {
+    margin: 0.5em 0;
+}
+
+main {
+    margin: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skillCard {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.skillBar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skillLevel {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    border-radius: 5px 0 0 5px;
+}
+
+.contactSection form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection label, .contactSection input, .contactSection textarea {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
